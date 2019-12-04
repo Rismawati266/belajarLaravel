@@ -11,9 +11,10 @@
 
         <div class="card">
             <div class="card-body">
-                <h5 class="card-title"> {{ $students->nama }} </h5>
-                <h6 class="card-subtitle mb-2 text-muted"> {{ $students->nrp }} </h6>
-                <p class="card-text">{{ $students->email }}</p>
+                <h5 class="card-title"> {{ $student->nama }} </h5>
+                <h6 class="card-subtitle mb-2 text-muted"> {{ $student->nrp }} </h6>
+                <p class="card-text">{{ $student->email }}</p>
+                <p class="card-text">{{ $student->jurusan }}</p>
                 <a href="#" class="card-link">Card link</a>
                 <a href="#" class="card-link">Another link</a>
             </div>
