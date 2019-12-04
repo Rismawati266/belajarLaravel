@@ -13,11 +13,13 @@
             @csrf
             <div class="form-group">
                 <label for="nama">Nama</label>
-                <input type="text" class="form-control" id="nama" placeholder="Masukkan Nama" name="nama">
+                <input type="text" class="form-control @error('nama') is-invalid @enderror" id="nama" placeholder="Masukkan Nama" name="nama">
+                @error('nama') <div class="invalid-feedback">{{ $message }}</div>@enderror
             </div>
             <div class="form-group">
                 <label for="nrp">NRP</label>
-                <input type="text" class="form-control" id="nrp" placeholder="Masukkan NRP" name="nrp">
+                <input type="text" class="form-control @error('nrp') is-invalid @enderror" id="nrp" placeholder="Masukkan NRP" name="nrp">
+                @error('nrp') <div class="invalid-feedback">{{ $message }}</div>@enderror
             </div>
             <div class="form-group">
                 <label for="email">Email</label>
