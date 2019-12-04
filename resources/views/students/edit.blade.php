@@ -1,13 +1,13 @@
 @extends('layout/main')
 
-@section('title', 'Form Tambah Data Mahasiswa')
+@section('title', 'Form Ubah Data Mahasiswa')
 
 @section('container')
 
   <div class="container">
     <div class="row">
       <div class="col-8">
-        <h1 class="mt-3">Form Tambah Data Mahasiswa</h1>
+        <h1 class="mt-3">Form Ubah Data Mahasiswa</h1>
 
         <form method="post" action="/students">
             @csrf
@@ -29,7 +29,7 @@
                 <label for="jurusan">Jurusan</label>
                 <input type="text" class="form-control" id="jurusan" placeholder="Masukkan Jurusan" name="jurusan" value="{{ old( 'jurusan' ) }}">
             </div>
-            <button type="submit" class="btn btn-primary">Tambah Data!</button>
+            <button type="submit" class="btn btn-primary">Ubah Data!</button>
         </form>
 
       </div>
