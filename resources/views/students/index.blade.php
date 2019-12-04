@@ -13,7 +13,7 @@
                 @foreach( $students as $student )
                     <li class="list-group-item d-flex justify-content-between align-items-center">
                         {{ $student->nama }}
-                        <a href="/students/1" class="badge badge-info">Detail</a>
+                        <a href="/students/{{ $student->id }}" class="badge badge-info">Detail</a>
                     </li>
                 @endforeach
             </ul>
